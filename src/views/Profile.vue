@@ -58,10 +58,11 @@
                     <!-- <button
                       class="bg-pink-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1"
                       type="button"
-                      style="transition: all 0.15s ease 0s;"
+                      style="transition: all 0.15s ease 0s;background:  #440030;;"
                     >
-                      Connect
+                      Download CVS.pdf
                     </button> -->
+                    <DownloadPdf />
                   </div>
                 </div>
                 <div class="w-full lg:w-4/12 px-4 lg:order-1">
@@ -223,11 +224,13 @@ La mia passione per la programmazione mi spinge costantemente a crescere e migli
 <script>
 import NavbarComponent from "../components/Navbar.vue";
 import FooterComponent from "../components/Footer.vue";
+import DownloadPdf from "../components/DownloadPdf.vue";
 export default {
   name: "profile-page",
   components: {
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    DownloadPdf
   },
   data(){
     return{
