@@ -134,22 +134,78 @@ La mia passione per la programmazione mi spinge costantemente a crescere e migli
                     <a href="https://armortemplate.site" target="_blank" rel="noopener" class="font-normal text-pink-500"
                       >ARMORTEMPLATE.SITE</a
                     >
+                    <div>
+                      <button
+                      class="m-3 bg-pink-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-1 rounded outline-none focus:outline-none sm:mr-2 mb-1"
+                      type="button"
+                      style="transition: all 0.15s ease 0s;background: #440030;"
+                      @click="toggleArmor = !toggleArmor"
+                    >
+                      {{ toggleArmor ? 'Close' : 'Preview' }}
+                    </button>
+                    </div>
+
+                    <div>
+                      <iframe v-if="toggleArmor" src="https://armortemplate.site" width="100%" height="500"></iframe>
+                    </div>
                     <hr>
                     <div class="m-3"></div>
                     <a href="https://spin-win-money.netlify.app/" target="_blank" rel="noopener" class="font-normal text-pink-500"
                       >Spin & Win Money</a
                     >
+                    <div>
+                      <button
+                      class="m-3 bg-pink-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-1 rounded outline-none focus:outline-none sm:mr-2 mb-1"
+                      type="button"
+                      style="transition: all 0.15s ease 0s;background: #440030;"
+                      @click="toggleSpin = !toggleSpin"
+                    >
+                      {{ toggleSpin ? 'Close' : 'Preview' }}
+                    </button>
+                    </div>
+
+                    <div>
+                      <iframe v-if="toggleSpin" src="https://spin-win-money.netlify.app/" width="100%" height="500"></iframe>
+                    </div>
                     <hr>
                     <div class="m-3"></div>
                     
                     <a href="https://alma-bar.alguientiene.com" target="_blank" rel="noopener" class="font-normal text-pink-500"
                       >Menu Alma Bar</a
                     >
+                    <div>
+                      <button
+                      class="m-3 bg-pink-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-1 rounded outline-none focus:outline-none sm:mr-2 mb-1"
+                      type="button"
+                      style="transition: all 0.15s ease 0s;background: #440030;"
+                      @click="toggleAlma = !toggleAlma"
+                    >
+                      {{ toggleAlma ? 'Close' : 'Preview' }}
+                    </button>
+                    </div>
+
+                    <div>
+                      <iframe v-if="toggleAlma" src="https://alma-bar.alguientiene.com" width="100%" height="500"></iframe>
+                    </div>
                     <hr>
                     <div class="m-3"></div>
                     <a href="https://my-menu-qr.netlify.app/" target="_blank" rel="noopener" class="font-normal text-pink-500"
                       >My Menu QR</a
                     >
+                    <div>
+                      <button 
+                      class="m-3 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-1 rounded outline-none focus:outline-none sm:mr-2 mb-1"
+                      type="button"
+                      style="transition: all 0.15s ease 0s;background: #440030;"
+                      @click="toggleMymenu = !toggleMymenu"
+                    >
+                      {{ toggleMymenu ?'Close' : 'Preview' }}
+                    </button>
+                    </div>
+
+                    <div>
+                      <iframe v-if="toggleMymenu" src="https://my-menu-qr.netlify.app/" width="100%" height="500"></iframe>
+                    </div>
                     <hr>
                     
                    
@@ -172,6 +228,14 @@ export default {
   components: {
     NavbarComponent,
     FooterComponent
+  },
+  data(){
+    return{
+      toggleMymenu: false,
+      toggleAlma: false,
+      toggleSpin: false,
+      toggleArmor: false,
+    }
   }
 }
 </script>

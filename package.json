@@ -7,7 +7,11 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.15.3",
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@popperjs/core": "2.9.1",
     "core-js": "3.9.1",
     "vue": "3.0.7"
