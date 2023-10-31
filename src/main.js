@@ -17,10 +17,10 @@ import App from "@/App.vue";
 
 const routes = [
   {
-    path: "/profile",
+    path: "/",
     component: Profile,
   },
-  { path: "/:pathMatch(.*)*", redirect: "/profile" },
+
 ];
 
 const router = createRouter({
