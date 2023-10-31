@@ -1,6 +1,8 @@
 [build]
-  command = "npm run build"
-  publish = "dist"  # Directorio donde se encuentra la aplicación construida
+  command = "npm run build" # Comando para construir tu aplicación Vue.js
+  publish = "dist" # Directorio donde se encuentra la versión compilada de tu aplicación
 
-[context.production]
-  command = "npm run build"
+[[redirects]] # Configuración de redireccionamiento para SPA
+  from = "/*" # Redirige todas las rutas a index.html
+  to = "/index.html"
+  status = 200
