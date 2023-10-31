@@ -1,6 +1,6 @@
 [build]
   command = "npm run build" # Comando para construir tu aplicación Vue.js
-  publish = "public" # Directorio donde se encuentra la versión compilada de tu aplicación
+  publish = "dist" # Directorio donde se encuentra la versión compilada de tu aplicación
 
 [[redirects]] # Configuración de redireccionamiento para SPA
   from = "/*" # Redirige todas las rutas a index.html
