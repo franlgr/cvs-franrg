@@ -16,7 +16,7 @@ app.get('/ejemplo', (req, res) => {
 });
 
 // Puerto en el que el servidor Express escuchará las solicitudes
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 6103;
 
 app.listen(PORT, () => {
   console.log(`Servidor Express en funcionamiento en el puerto ${PORT} = http://localhost:${PORT}`);
