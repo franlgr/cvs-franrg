@@ -132,7 +132,7 @@ La mia passione per la programmazione mi spinge costantemente a crescere e migli
                     </p>
                     <span class="font-bold">Collaboro ai seguenti progetti:</span>
                     <div class="m-3"></div>
-                    <a href="https://armortemplate.site" target="_blank" rel="noopener" class="font-normal text-pink-500"
+                    <a href="https://armor.ploydev.site" target="_blank" rel="noopener" class="font-normal text-pink-500"
                       >ARMORTEMPLATE.SITE</a
                     >
                     <div>
